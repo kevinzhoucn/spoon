@@ -1,0 +1,22 @@
+<div class="content txt_h">
+  <h2>产品详情: <%= @product.name %></h2>
+  <hr>
+
+    <div class="productimg">
+      <a href="#<%= @product.name%>">
+        <img src="<%= @product.avatar.url %>" />
+      </a>
+    </div>
+    <div class="lb-overlay" id="<%= @product.name%>">
+      <img src="<%= @product.avatar.url %>" style="width:75%" />
+      <a href="#page" class="lb-close">x 关闭</a>
+    </div>
+    <div class="productcontent">
+      <%= @product.content %>
+    </div>
+
+  <div style="clear:both"></div>
+  <div class="btn" >
+    <a href="#" onclick="window.location=('/products');return(false);">返回上一页</a>
+  </div>
+</div>

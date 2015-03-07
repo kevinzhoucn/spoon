@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @cpanel_slide.title %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @cpanel_slide.image_url %>
+</p>
+
+<div>
+  <img src="<%= @cpanel_slide.avatar.url(:thumb) %>"><br>
+  <img src="<%= @cpanel_slide.avatar.url(:medium) %>"><br>
+</div>
+
+<%= link_to 'Edit', edit_cpanel_slide_path(@cpanel_slide) %> |
+<%= link_to 'Back', cpanel_slides_path %>

@@ -1,0 +1,15 @@
+<div class="content txt_h">
+  <div class="submenu">
+    <ul>
+      <li class="current"><a href="/about">企业形象</a></li>
+      <li><a href="/corpnews">企业新闻</a></li>
+      <li><a href="/positions">在线招聘</a></li>
+    </ul>
+  </div>
+  <h2>美丽资讯</h2>
+  <hr>
+  <div style="display:inline;">
+    <img src="<%= @about_image_url %>" class="aboutbrivates" style="border:5px solid #fff;box-shadow:0 0 20px #999" />
+    <%= @about_html.html_safe %>
+  </div>
+</div>

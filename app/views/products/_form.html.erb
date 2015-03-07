@@ -1,0 +1,15 @@
+<%= simple_form_for(@product) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :content %>
+    <%= f.input :avatar %>
+    <%= f.input_field :category_id, collection: Category.all, prompt: "请选择.." %>
+  </div>
+  
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+
+<% end %>

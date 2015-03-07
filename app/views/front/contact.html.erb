@@ -1,0 +1,34 @@
+<div class="content txt_h">
+  <h2>财富连线</h2>
+  <hr>
+  <div class="col-left-4">
+    <iframe scrolling="no" src="map.html" style="width:100%;height:350px;">
+    </iframe>
+    <div>
+      <h2>公司地址</h2>
+      <p><%= @contact_address.html_safe %></p>
+      <p>联系电话：<%= @contact_phone.html_safe %></p>
+      <p>Email：<%= @contact_email.html_safe %></p>
+      <p>QQ：<%= @contact_qq.html_safe %></p>
+      <p>微信：<%= @contact_webchat.html_safe %></p>
+    </div>
+  </div>
+  <div class="col-left-6">
+    <div class="contact-form">
+      <h3>联系我们</h3>
+      <%= simple_form_for(@enquiry) do |f| %>
+        <%= f.error_notification %>
+        <div class="form-inputs">
+          <%= f.input :name, label: "您的名称" %>
+          <%= f.input :phone, label: "E-MAIL" %>
+          <%= f.input :email, label: "联系电话" %>
+          <%= f.input :message, label: "给我们留言" %>
+        </div>
+        <div class="form-actions">
+          <%= f.button :submit, '提交' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

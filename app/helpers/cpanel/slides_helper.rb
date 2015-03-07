@@ -1,0 +1,2 @@
+module Cpanel::SlidesHelper
+end

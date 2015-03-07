@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”>
+<html>
+  <head>
+    <title>project</title>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= render_stylesheets %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <!--[if !IE]>--><link rel="stylesheet" type="text/css" href="/css/cpanelstyle.css" /><!--<![endif]-->
+    <!--[if lt IE 9]><script src="/js/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="/css/IE7_cpanelstyle.css" /><![endif]-->
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.4.6/standard/ckeditor.js"></script>
+  </head>
+  <body class="<%= controller_name %>">
+    <div class="container">
+      <div class="cpanel-header">
+        <div class="brivates-logo"></div>
+        <div class="cpanel-title-text">
+          <h2>Brivates网站控制台</h2>
+          <div style="position:absolute;width:auto;right:18px;bottom:10px">
+          修改密码 | 注销
+          </div>
+        </div>
+      </div>
+      <div class="cpanel-body">
+        <div class="cpanel-body-left">
+          <%= render partial: 'common/theme/cpanel_left' %>
+        </div>
+        <div class="cpanel-body-right">
+          <%= yield %>
+        </div>
+      </div>
+      <div class="cpanel-footer">
+        版权所有© 波蒂斯抗衰中心 | 技术支持信息
+      </div>
+    </div>
+  </body>
+</html>

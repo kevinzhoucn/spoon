@@ -1,0 +1,26 @@
+<h1>设置图片轮播</h1>
+<hr>
+<div class="listing">
+  <div style="width:300px">
+    <h2>图片轮播列表</h2>
+  </div>
+  <ul style="list-style:none">
+    <% @cpanel_slides.each do |cpanel_slide| %>
+    <li>
+      <div class="list-title">
+        <%= cpanel_slide.title.html_safe %>
+        <%= cpanel_slide.avatar.url %>
+      </div>
+      <div class="list-action">
+        <%= link_to '编辑', edit_cpanel_slide_path(cpanel_slide) %>
+      </div>
+      <div class="list-action">
+        <%= link_to '删除', cpanel_slide_path(cpanel_slide), method: :delete, data: { confirm: '确定要删除这张图片吗？' } %>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  <div style="height:35px;line-height:35px;">
+    <%= link_to '添加图片', new_cpanel_slide_path %>
+  </div>
+</div>

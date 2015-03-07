@@ -1,0 +1,16 @@
+<%= simple_form_for([:cpanel, @cpanel_slide]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%#= f.input :image_url, label: "图片地址" %>
+    <%= f.input :avatar, label: "上传图片：" %>
+    <%= f.input :title, label: "文字说明",as: :text %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, 'button', class: "submitbtn", value: "确定" %>
+  </div>
+<% end %>
+<script>
+ CKEDITOR.replace('slide_title');
+</script>

@@ -1,0 +1,60 @@
+<style type="text/css">
+@import url('/css/tabbing.css');
+</style>
+<style type="text/css">
+  ul [id^="label"]{
+    width: 30%;
+    float:left;
+    list-style: none;
+  }
+</style>
+<h1>网站基本信息设置</h1>
+<hr />
+
+<div id="l-container">
+  <ul>
+    <li id="label1">企业形象</li>
+    <li id="label2">招商加盟</li>
+    <li id="label3">财富连线</li>
+  </ul>
+</div>
+
+<div class="tabs">
+  <div id="content1" style="display:block">
+    <!--about_title | 企业形象标题 <br> 这个key不要了，删掉-->
+    <li>
+      <%= link_to '编辑企业形象图片', edit_cpanel_site_config_path(@cpanel_about_image_url) %>
+    </li>
+    <li>
+      <%= link_to '编辑企业形象内容', edit_cpanel_site_config_path(@cpanel_about_content_html) %>
+    </li>
+  </div>
+
+  <div id="content2">
+    <li>
+      <%= link_to '编辑加盟优势', edit_cpanel_site_config_path(@cpanel_affiliate_advantage) %><br>
+    </li>
+    <li>
+      <%= link_to '编辑加盟政策', edit_cpanel_site_config_path(@cpanel_affiliate_policy) %><br>
+    </li>
+  </div>
+
+  <div id="content3">
+    <li>
+      <%= link_to '编辑联系地址', edit_cpanel_site_config_path(@cpanel_contact_address) %>
+    </li>
+    <li>
+      <%= link_to '编辑联系电话', edit_cpanel_site_config_path(@cpanel_contact_phone) %>
+    </li>
+    <li>
+      <%= link_to '编辑联系邮箱', edit_cpanel_site_config_path(@cpanel_contact_email) %>
+    </li>
+    <li>
+      <%= link_to '编辑联系qq', edit_cpanel_site_config_path(@cpanel_contact_qq) %>
+    </li>
+    <li>
+      <%= link_to '编辑联系微信', edit_cpanel_site_config_path(@cpanel_contact_webchat) %>
+    </li>
+  </div>
+</div>
+<script type="text/javascript" src="/js/tabbing.js"></script>

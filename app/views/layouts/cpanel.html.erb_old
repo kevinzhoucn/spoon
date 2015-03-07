@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+    <head>
+      <meta charset="utf-8">
+      <title>新建页面</title>
+
+      <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+      <link rel="stylesheet" href="style.css" media="screen">
+      <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+      <script src="jquery.js"></script>
+      <script src="script.js"></script>
+    </head>
+<body>
+  <div id="brivates-main">
+  <header class="brivates-header">
+    <div class="brivates-shapes">
+  <div class="brivates-textblock brivates-object1785836730" data-left="3.47%">
+      <div class="brivates-object1785836730-text-container">
+      <div class="brivates-object1785836730-text"></div>
+    </div>
+    
+  </div>
+        </div>
+  <h1 class="brivates-headline" data-left="93.91%">
+    <a href="#">Brivates Web Console</a>
+  </h1>
+
+  </header>
+  <nav class="brivates-nav">
+    <ul class="brivates-hmenu"><li><a href="kongzhitaishouxie.html" class="">控制台首页</a></li><li><a href="shezhiwangzhanjibenxinxi.html" class="">设置网站基本信息</a></li><li><a href="shezhitupianlunbo.html" class="">设置图片轮播</a></li><li><a href="chanpinguanli.html" class="active">产品管理</a></li><li><a href="zaixianqiaopinguanli.html">在线招聘管理</a></li><li><a href="bianjiqiyexinwen.html">编辑企业新闻</a></li></ul> 
+    </nav>
+  <div class="brivates-sheet clearfix">
+        <div class="brivates-layout-wrapper">
+          <div class="brivates-content-layout">
+            <div class="brivates-content-layout-row">
+              <div class="brivates-layout-cell brivates-sidebar1"><div class="brivates-vmenublock clearfix">
+      <div class="brivates-vmenublockcontent">
+  <ul class="brivates-vmenu"><li><a href="kongzhitaishouxie.html" class="">控制台首页</a></li><li><a href="shezhiwangzhanjibenxinxi.html" class="">设置网站基本信息</a></li><li><a href="shezhitupianlunbo.html" class="">设置图片轮播</a></li><li><a href="chanpinguanli.html" class="active">产品管理</a></li><li><a href="zaixianqiaopinguanli.html">在线招聘管理</a></li><li><a href="bianjiqiyexinwen.html">编辑企业新闻</a></li></ul>
+          
+      </div>
+  </div></div>
+              <div class="brivates-layout-cell brivates-content"><article class="brivates-post brivates-article">
+                  
+                          
+          <div class="brivates-postcontent brivates-postcontent-0 clearfix"><p><br/></p></div>
+                  
+          
+
+  </article></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <footer class="brivates-footer">
+    <div class="brivates-footer-inner">
+  <p><span style="font-size:13px;"><span style="font-weight:bold;">Etiam bibendum. <a href="#">Privacy Policy</a><span style="font-size:11px;">|</span></span></span> <a href="http://www.iconfinder.com/browse/iconset/web2badges/#readme">set</a> A.<a href="http://www.soulvisual.com/blog/">Jeremy Roux</a></p><p><br></p>
+    </div>
+  </footer>
+
+  </div>
+
+
+</body>
+</html>

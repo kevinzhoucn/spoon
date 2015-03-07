@@ -1,0 +1,21 @@
+<%= simple_form_for([:cpanel, @cpanel_position]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title, label: "职位名称" %>
+    <%= f.input :content, label: "职位描述", as: :text, rows: 10, cols: 50 %>
+    <!-- <label>职位状态</label> -->
+    <%#= f.collection_radio_buttons :status, [ ['招聘中', '0'], ['暂停招聘', '1'] ], :last, :first, checked: 0 %>
+    <br>
+    <!-- <label>职位类型</label> -->
+    <%#= f.collection_radio_buttons :image_url_type, [ ['员工', '0'], ['店长', '1'] ], :last, :first, checked: 0 %>
+    <%= f.input :avatar, label: "上传职位图片：" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit,value: "确定", class: "submitbtn" %>
+  </div>
+<% end %>
+<script>
+CKEDITOR.replace('position_content');
+</script>

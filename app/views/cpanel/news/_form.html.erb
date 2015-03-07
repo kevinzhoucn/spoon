@@ -1,0 +1,15 @@
+<%= simple_form_for([:cpanel, @news]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :title, label:"新闻标题"%>
+    <%= f.input :content,as: :text, label:"新闻内容" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "submitbtn", value: "确定"%>
+  </div>
+<% end %>
+<script>
+CKEDITOR.replace('news_content');
+</script>

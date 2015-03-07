@@ -1,0 +1,18 @@
+<%= simple_form_for([:cpanel, @product]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, label: "产品名称" %>
+    <%= f.input :content, label: "产品描述",as: :text %>
+    <%= f.input :avatar, label: "产品图片" %>
+    <%= f.input_field :type_id, as: :radio_buttons, collection: [ ['新品速递', 0], ['特色产品', 1], ['明星产品', 2] ], prompt: "请选择.." %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit,class: "submitbtn", value: "确定" %>
+  </div>
+
+<% end %>
+<script>
+CKEDITOR.replace('product_content');
+</script>
