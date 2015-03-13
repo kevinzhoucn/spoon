@@ -1,0 +1,110 @@
+/* Created by Artisteer v4.1.0.59782 */
+
+.xingyue-header, #xingyue-header-bg, .xingyue-layout-cell, .xingyue-layout-wrapper, .xingyue-footer, .xingyue-nav, #xingyue-hmenu-bg, .xingyue-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.xingyue-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.xingyue-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#xingyue-header-bg 
+{
+   display: none;
+}
+
+.xingyue-hmenu>li, .xingyue-hmenu>li>a
+{
+   display: inline !important;
+   zoom: 1;
+   float: none !important;
+   vertical-align: top;
+}
+ul.xingyue-hmenu, ul.xingyue-hmenu ul {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+#xingyue-hmenu-bg 
+{
+   display: none;
+}
+
+ul.xingyue-hmenu>li:first-child {
+   padding-right:5px;
+}
+
+ul.xingyue-hmenu ul{
+   background-color: #A6A6A6 !important;
+}
+
+.xingyue-content-layout, .xingyue-content-layout-row, .xingyue-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.xingyue-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.xingyue-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.xingyue-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.xingyue-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.xingyue-postheadericons span{
+   zoom: 1;
+}
+.xingyue-postcontent {
+   height: 1%;
+}
+
+.xingyue-postfootericons span{
+   zoom: 1;
+}
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.xingyue-content 
+{
+   width: auto;
+   float:none;
+}
+

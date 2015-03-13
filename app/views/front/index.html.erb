@@ -1,3 +1,15 @@
-<%= link_to 'products', products_path %>
-<%= link_to 'categories', categories_path %>
-<%= link_to 'courses', courses_path %>
+<%#= link_to 'products', products_path %>
+<%#= link_to 'categories', categories_path %>
+<%#= link_to 'courses', courses_path %>
+
+<div class="xingyue-content-layout" id="slideshow">
+  <%= render partial: 'common/theme/index/index_slider_fullwidth' %>
+</div><!-- end of slideshow -->
+
+<div class="xingyue-content-layout" id="productthumbs">
+  <%= render partial: 'common/theme/index/index_thumbs' %>
+</div><!-- end of productthumbs -->
+
+<div class="xingyue-content-layout" id="events">
+  <%= render partial: 'common/theme/index/index_events' %>
+</div><!-- end of events -->

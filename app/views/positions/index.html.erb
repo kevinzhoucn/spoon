@@ -1,33 +1,38 @@
-<div class="content txt_h">
-  
-  <div class="submenu">
-    <ul>      
-      <li><a href="/about"><a href="/about">企业形象</a></li>
-      <li><a href="/corpnews">企业新闻</a></li>
-      <li class="current"><a href="/positions">在线招聘</a></li>
-    </ul>
-  </div>
-  <h2>美丽资讯</h2>
-  <hr>
-  <div>
-    <% @positions.each do |position| %>
-      <div style="display:block;height:auto;overflow:hidden;margin:10px 0 10px 0;padding-bottom:15px;">
-        <% if position.image_url_type == 0 %>
-          <% position_image_url = @position_image_employee %>
-        <% else %>
-          <% position_image_url = @position_image_manager %>
-        <% end %>
-        <img src="<%= position.avatar.url(:thumb) %>" class="aboutbrivates" style="border:5px solid #fff;box-shadow:0 0 20px #999" />
-        <h2><%= position.title %></h2>
-        <p style="font-size:1.2em"><%= position.content.html_safe %></p>
-        <div class="btn">
-          <%= link_to '详细信息', position %>
-        </div>
-        <div class="btn">
-          <%= link_to '申请职位', new_position_resume_path(position) %>
-        </div>
-      </div>
-      <hr>
-    <% end %>
+<div class="xingyue-content-layout">
+  <div class="xingyue-content-layout-row">
+    <div class="xingyue-layout-cell layout-item-2" style="width:20%" id="left">
+      <h1>最新动态</h1>
+      <ul style="float: left;">
+        <li><a href="#">教学视频</a></li>
+        <li><a href="#">吉他曲谱</a></li>
+        <li><a href="#">招生动态</a></li>
+      </ul>
+    </div>
+    <div class="xingyue-layout-cell layout-item-2" style="width:75%" id="right">
+      <h1 style="text-align: center;">最新动态</h1>
+      <h4>本周热点</h4>
+      <ul style="float: left;">
+        <li>开学季民谣吉他大促销</li>
+        <li>钢琴培训教程</li>
+        <li>王老师谈弹唱技巧</li>
+        <li>李老师载誉归来</li>
+        <li>星月琴行就是好</li>
+      </ul>
+      <p style="float: right;">
+        <img width="100" height="150" alt="" src="/img/hit1.jpg" class="">
+      </p>
+      <hr style="border: none; background-color: #dedede; color: #dedede; height: 1px; margin-top: 190px; margin-bottom: 20px">
+      <h4>本月热点</h4>
+      <ul style="float: left;">
+        <li>开学季民谣吉他大促销</li>
+        <li>钢琴培训教程</li>
+        <li>王老师谈弹唱技巧</li>
+        <li>李老师载誉归来</li>
+        <li>星月琴行就是好</li>
+      </ul>
+      <p style="float: right;">
+        <img width="100" height="150" alt="" src="/img/hit2.jpg">
+      </p>
+    </div>
   </div>
 </div>

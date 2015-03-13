@@ -1,4 +1,4 @@
-<h1>Listing products</h1>
+<!-- <h1>Listing products</h1>
 
 <table>
   <thead>
@@ -23,5 +23,42 @@
 </table>
 
 <br>
+<%= link_to 'New product', new_product_path %> -->
 
-<%= link_to 'New product', new_product_path %>
+<div class="xingyue-content-layout">
+  <div class="xingyue-content-layout-row">
+    <div class="xingyue-layout-cell layout-item-2" style="width:20%" id="left">
+      <h1>产品分类</h1>
+      <ul style="float: left;">
+        <li><a href="#">全部产品</a></li>
+        <li><a href="#">民谣吉他</a></li>
+        <li><a href="#">电吉他</a></li>
+        <li><a href="#">贝司</a></li>
+        <li><a href="#">架子鼓</a></li>
+        <li><a href="#">音箱/效果器</a></li>
+        <li><a href="#">其他乐器</a></li>
+        <li><a href="#">周边配件</a></li>
+
+      </ul>
+    </div>
+    <div class="xingyue-layout-cell layout-item-2" style="width:75%" id="right">
+      <div>
+        <h4>热卖中</h4>
+        <hr>
+          <% @products.each do |product| %>
+            <div class="layout-item-2 xingyue-layout-cell">
+              <a href="<%= product_path(product) %>">
+                <img src="/img/latin.png">
+                <br>
+                <%=product.name%>
+              </a>
+            </div>
+          <% end %>
+          <div style="text-align:right">
+            <a class="xingyue-button" href="#">更多</a>
+          </div>
+        <hr style="border: none; background-color: #dedede; color: #dedede; height: 1px; margin-bottom: 20px">
+      </div>
+    </div>
+  </div>
+</div>

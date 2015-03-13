@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US">
   <head>
-  <title>Project</title>
-    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-    <%= render_stylesheets %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <%= render partial: 'common/theme/application_headmeta' %>
   </head>
-  <body class="<%= controller_name %>" data-controller-name="<%= controller_name %>">
-    <div>
-      <%= yield %>
+  <body>
+    <div id="xingyue-main">
+      <%= render partial: 'common/theme/application_header' %>
 
-      <div class="footer">
-        <div>
+      <div class="xingyue-sheet clearfix">
+        <div class="xingyue-layout-wrapper">
+          <div class="xingyue-content-layout">
+            <div class="xingyue-content-layout-row">
+              <div class="xingyue-layout-cell xingyue-content">
+                <article class="xingyue-post xingyue-article">  
+                  <%#= render partial: 'common/theme/yield' %>
+                  <div class="xingyue-postcontent xingyue-postcontent-0 clearfix">
+                    <%= yield %>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+      <%= render partial: 'common/theme/application_footer' %>
+    </div><!--end of xingyue-main -->
   </body>
 </html>
