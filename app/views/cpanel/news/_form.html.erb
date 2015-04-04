@@ -4,6 +4,7 @@
   <div class="form-inputs">
     <%= f.input :title, label:"新闻标题"%>
     <%= f.input :content,as: :text, label:"新闻内容" %>
+    <%= f.input_field :kind_of, as: :radio_buttons, collection: [ ['动态', 0], ['教学视频', 1], ['乐理知识', 2] ], prompt: "请选择.." %>
   </div>
 
   <div class="form-actions">

@@ -4,7 +4,9 @@ class Product
   field :content, type: String
 
   field :category_id, type: String
+  field :sub_category_id, type: String
   belongs_to :category
+  belongs_to :sub_category
 
   mount_uploader :avatar, AvatarUploader
 end

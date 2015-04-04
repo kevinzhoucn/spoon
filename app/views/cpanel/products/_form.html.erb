@@ -5,7 +5,10 @@
     <%= f.input :name, label: "产品名称" %>
     <%= f.input :content, label: "产品描述",as: :text %>
     <%= f.input :avatar, label: "产品图片" %>
-    <%= f.input_field :type_id, as: :radio_buttons, collection: [ ['新品速递', 0], ['特色产品', 1], ['明星产品', 2] ], prompt: "请选择.." %>
+    <%#= f.input_field :type_id, as: :radio_buttons, collection: [ ['新品速递', 0], ['特色产品', 1], ['明星产品', 2] ], prompt: "请选择.." %>
+    
+    <%= f.input_field :category_id, collection: Category.all, prompt: "请选择.." %>
+    <%= f.input_field :sub_category_id, collection: SubCategory.all, prompt: "请选择.." %>
   </div>
 
   <div class="form-actions">

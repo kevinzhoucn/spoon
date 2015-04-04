@@ -6,6 +6,7 @@
     <%= f.input :content %>
     <%= f.input :avatar %>
     <%= f.input_field :category_id, collection: Category.all, prompt: "请选择.." %>
+    <%= f.input_field :sub_category_id, collection: SubCategory.all, prompt: "请选择.." %>
   </div>
   
   <div class="form-actions">

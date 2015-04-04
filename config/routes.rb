@@ -2,6 +2,7 @@ Rails40Starter::Application.routes.draw do
   resources :courses
 
   resources :categories
+  resources :sub_categories
   resources :products
 
   # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'  
@@ -15,6 +16,10 @@ Rails40Starter::Application.routes.draw do
     resources :positions
     resources :slides
     get '/about' => 'front#about', as: :front_about
+
+    resources :categories#, except: [:index]
+    resources :sub_categories
+    # get '/categories/list/:id' => 'categories#i_index', as: :front_category_index
   end
 
   devise_for :users
