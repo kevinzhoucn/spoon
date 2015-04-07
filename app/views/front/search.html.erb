@@ -1,0 +1,11 @@
+<p>Search for "<%= @key_words %>"</p>
+
+<% @products.each do |product| %>
+  <div class="layout-item-2 xingyue-layout-cell">
+    <a href="<%= product_path(product) %>">
+      <img src="/img/latin.png">
+      <br>
+      <%= product.name%>
+    </a>
+  </div>
+<% end %>

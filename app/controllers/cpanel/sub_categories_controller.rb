@@ -13,8 +13,8 @@ class Cpanel::SubCategoriesController < Cpanel::ApplicationController
   end
 
   def new
-    @sub_category = SubCategory.new
-    respond_with(@sub_category)
+    @cpanel_sub_category = SubCategory.new
+    respond_with(@cpanel_sub_category)
   end
 
   def edit

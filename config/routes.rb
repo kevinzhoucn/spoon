@@ -7,6 +7,8 @@ Rails40Starter::Application.routes.draw do
 
   # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'  
   resources :news
+
+  get '/front/search' => 'front#search', as: :front_search
   
   namespace :cpanel do
     get '/' => 'front#index', as: :front_index

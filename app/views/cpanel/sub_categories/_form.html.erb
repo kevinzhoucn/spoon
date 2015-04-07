@@ -1,4 +1,4 @@
-<%= simple_form_for(@cpanel_sub_category) do |f| %>
+<%= simple_form_for(@cpanel_sub_category, :url => cpanel_sub_category_path(@cpanel_sub_category) ) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">

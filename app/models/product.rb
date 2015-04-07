@@ -9,4 +9,12 @@ class Product
   belongs_to :sub_category
 
   mount_uploader :avatar, AvatarUploader
+
+  def self.search(search)
+    if search
+      where(name: /#{search}/)
+    else
+      all
+    end
+  end
 end
