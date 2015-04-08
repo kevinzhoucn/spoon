@@ -12,7 +12,7 @@ class Product
 
   def self.search(search)
     if search
-      where(name: /#{search}/)
+      where(name: /#{search}/i)
     else
       all
     end

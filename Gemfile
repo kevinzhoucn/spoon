@@ -1,6 +1,6 @@
 # coding: utf-8
 if ENV['USE_OFFICIAL_GEM_SOURCE']
-  source 'https://rubygems.org'
+  source 'http://rubygems.org'
 else
   source 'http://ruby.taobao.org'
 end
@@ -53,7 +53,7 @@ end
 # 上传组件
 gem 'carrierwave'
 gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
-gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
+gem 'mongoid-grid_fs', git: 'https://github.com/ahoward/mongoid-grid_fs'
 gem 'mini_magick'
 
 # Mongoid 辅助插件
@@ -67,7 +67,7 @@ gem 'rolify'
 gem 'cancancan'
 
 # 表单
-gem 'simple_form', '3.1.0.rc2', github: 'plataformatec/simple_form'
+gem 'simple_form', git: 'https://github.com/plataformatec/simple_form', :tag => 'v3.1.0.rc2'
 gem 'rails_admin'
 
 # Bootstrap
