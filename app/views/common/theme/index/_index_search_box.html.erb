@@ -1,0 +1,8 @@
+<div class="xingyue-content-layout-row">
+  <div class="xingyue-layout-cell layout-item-2">
+    <%= form_tag front_search_path, :method => 'get' do %>
+      <%= text_field_tag :key, params[:key], :style=>'border:1px solid #ccc;border-radius:12px;padding:5px'%>
+      <%= submit_tag "搜索产品", :name => nil, :class=>'xingyue-button' %>
+    <% end %>
+  </div>
+</div>

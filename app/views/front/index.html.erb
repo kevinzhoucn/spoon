@@ -2,12 +2,7 @@
 <%#= link_to 'categories', categories_path %>
 <%#= link_to 'courses', courses_path %>
 
-<div>
-  <%= form_tag front_search_path, :method => 'get' do %>
-    <%= text_field_tag :key, params[:key] %>
-    <%= submit_tag "搜索", :name => nil %>
-  <% end %>
-</div>
+
 
 <div class="xingyue-content-layout" id="slideshow">
   <%= render partial: 'common/theme/index/index_slider_fullwidth' %>
@@ -16,7 +11,9 @@
 <div class="xingyue-content-layout" id="productthumbs">
   <%= render partial: 'common/theme/index/index_thumbs' %>
 </div><!-- end of productthumbs -->
-
+<div class="xingyue-content-layout">
+  <%= render partial: 'common/theme/index/index_search_box' %>
+</div>
 <div class="xingyue-content-layout" id="events">
   <%= render partial: 'common/theme/index/index_events' %>
 </div><!-- end of events -->

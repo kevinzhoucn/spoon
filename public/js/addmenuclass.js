@@ -17,6 +17,10 @@ $(document).ready(function(){
     {
       $("#news").addClass("active");
     }
+    else if(/search/.test(url.toLowerCase()))
+    {
+      $("#products").addClass("active");
+    }
     else
     {
       $("#home").addClass("active");

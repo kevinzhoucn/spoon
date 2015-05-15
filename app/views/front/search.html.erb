@@ -1,5 +1,5 @@
-<p>Search for "<%= @key_words %>"</p>
 
+<!--
 <% @products.each do |product| %>
   <div class="layout-item-2 xingyue-layout-cell">
     <a href="<%= product_path(product) %>">
@@ -9,3 +9,29 @@
     </a>
   </div>
 <% end %>
+-->
+
+<div class="xingyue-content-layout">
+  <div class="xingyue-content-layout-row">
+    <%= render partial: 'common/theme/products/products_left' %>
+    <div class="xingyue-layout-cell layout-item-2" style="width:75%" id="right">
+      <div>
+        <h4>符合条件<span style="color:#DE9759;font-style:italic">【<%= @key_words %>】</span>的结果 </h4>
+        <hr>
+          <% @products.each do |product| %>
+            <div class="layout-item-2 xingyue-layout-cell">
+              <a href="<%= product_path(product) %>">
+                <img src="/img/latin.png">
+                <br>
+                <%=product.name%>
+              </a>
+            </div>
+          <% end %>
+          <div style="text-align:right">
+            <%= render partial: 'common/theme/index/index_search_box' %>
+          </div>
+        <hr style="border: none; background-color: #dedede; color: #dedede; height: 1px; margin-bottom: 20px">
+      </div>
+    </div>
+  </div>
+</div>
