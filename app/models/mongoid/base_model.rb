@@ -42,6 +42,7 @@ module Mongoid
           find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
         else
           find(:all)
+	end
       end
 
       def delay
