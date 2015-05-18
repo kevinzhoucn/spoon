@@ -2,7 +2,7 @@
   <div class="xingyue-content-layout-row">
     <%= render partial: 'common/theme/products/products_left' %>
     <div class="xingyue-layout-cell layout-item-2" style="width:75%" id="right">
-      <div class="content txt_h">
+      <div>
         <h1><%= @product.name %></h1>
         <hr>
           <div class="productimg">
@@ -19,6 +19,10 @@
           <a class="xingyue-button" href="#" onclick="window.location=('/products');return(false);">返回</a>
         </div>
       </div>
+      <!-- UY BEGIN -->
+        <div id="uyan_frame"></div>
+        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+      <!-- UY END -->
     </div>
   </div>
 </div>
